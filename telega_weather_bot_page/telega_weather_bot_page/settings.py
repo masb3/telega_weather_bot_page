@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+TELEGA_WEATHER_BOT_PAGE_DB = os.getenv("TELEGA_WEATHER_BOT_PAGE_DB")
+TELEGA_WEATHER_BOT_PAGE_DB_USER = os.getenv("TELEGA_WEATHER_BOT_PAGE_DB_USER")
+TELEGA_WEATHER_BOT_PAGE_DB_PASS = os.getenv("TELEGA_WEATHER_BOT_PAGE_DB_PASS")
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -78,9 +82,9 @@ WSGI_APPLICATION = 'telega_weather_bot_page.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'telega_weather_bot_page_comments',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'NAME': TELEGA_WEATHER_BOT_PAGE_DB,
+        'USER': TELEGA_WEATHER_BOT_PAGE_DB_USER,
+        'PASSWORD': TELEGA_WEATHER_BOT_PAGE_DB_PASS,
         'HOST': 'localhost',
         'PORT': '',
     }
