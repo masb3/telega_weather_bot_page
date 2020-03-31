@@ -1,0 +1,27 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Telegaweatherbot{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'page/css/page.css' %}">
+    {% block stylesheet %}{% endblock stylesheet%}
+</head>
+<body>
+{% block body %}
+<div class="nav">
+    <ul>
+      <li {% if request.resolver_match.url_name == 'index' %}class="active"{% endif %}><a href="/">Home</a></li>
+      <li {% if request.resolver_match.url_name == 'feedback' %}class="active"{% endif %}><a href="/feedback">FeedBack</a></li>
+      <li {% if request.resolver_match.url_name == 'contact' %}class="active"{% endif %}><a href="/contact">Contact</a></li>
+      <!--<li><a href="#about">About</a></li>-->
+      <!--<li style="float:right"><a class="active" href="#about">About</a></li>-->
+    </ul>
+</div>
+
+{% block content %}
+{% endblock content %}
+
+{% endblock body %}
+
+</body>
+</html>

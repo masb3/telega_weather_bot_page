@@ -1,0 +1,22 @@
+{% extends 'page/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div style="padding:20px;margin-top:30px;background-color:transparent;height:1500px;">
+  <h1>Telegaweatherbot</h1>
+
+  <div class="commands">
+    <h2><a href="http://t.me/telegaweatherbot">http://t.me/telegaweatherbot</a></h2>
+    <p><b>/temp</b> - current weather data of any location in the World</p>
+    <p><b>/temp_tomorrow</b> - next day weather data</p>
+    <p><b>/temp_update</b> - reset your location</p>
+    <br>
+    <br>
+    <p>Choose region, country, city</p>
+    <p>Decide whether you want to remember your choice</p>
+    <p>Reset your choice anytime to select new weather data location</p>
+  </div>
+</div>
+
+{% endblock content %}

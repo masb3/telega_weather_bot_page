@@ -1,0 +1,27 @@
+{% extends 'page/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div style="padding:30px;margin-top:40px;background-color:transparent;height:700px;">
+
+    <newComment>
+            <b>Comment</b>
+            <form action="/feedback/" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+            </form>
+    </newComment>
+
+    <allComments>
+                {% for comment in comments %}
+                <b>@{{ comment.name }}</b><br>
+                {{ comment.comment }} <br><br>
+                {% endfor %}
+    </allComments>
+
+</div>
+
+
+{% endblock content %}

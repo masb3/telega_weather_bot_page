@@ -1,0 +1,67 @@
+body {
+  margin:0;
+  /*background-image: url(../image/bg.png);*/
+  background:linear-gradient(120deg, #0088cc, #FFFFFF);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav li {
+  float: left;
+  /* display: inline-block; */
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.nav .active {
+  background-color: #4CAF50;
+}
+
+.commands {
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 20px;
+ color: #274c73;
+ text-align: center;
+ margin: 0 auto;
+}
+
+newComment {
+  float: left;
+  padding: 20px;
+  width: 40%;
+  background-color: transparent;
+}
+
+allComments {
+  float: right;
+  padding: 20px;
+  width: 50%;
+  overflow: scroll;
+  background-color: #f1f1f1;
+  height: 300px; // only for demonstration, should be removed
+}
