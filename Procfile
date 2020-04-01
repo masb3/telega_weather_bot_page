@@ -1,1 +1,1 @@
-web: gunicorn telega_weather_bot_page.wsgi --log-file -
+web: gunicorn --pythonpath telega_weather_bot_page telega_weather_bot_page.wsgi --log-file -
