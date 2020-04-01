@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
+
 
 TELEGA_WEATHER_BOT_PAGE_DB = os.getenv("TELEGA_WEATHER_BOT_PAGE_DB")
 TELEGA_WEATHER_BOT_PAGE_DB_USER = os.getenv("TELEGA_WEATHER_BOT_PAGE_DB_USER")
@@ -128,3 +130,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Configure Django App for Heroku.
+django_heroku.settings(locals())
