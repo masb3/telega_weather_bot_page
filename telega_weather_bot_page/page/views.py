@@ -32,5 +32,5 @@ class FeedbackView(FormView):
         return super(FeedbackView, self).form_invalid(form)
 
 
-class ContactView(TemplateView):
-    template_name = 'page/contact.html'
+class AboutView(TemplateView):
+    template_name = 'page/about.html'

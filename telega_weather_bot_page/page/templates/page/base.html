@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="4xjtJi2QCS1yw21XKxsSUA2Rkzx8SYiQyWPCqICLrwo" />
     <meta name="yandex-verification" content="e109cccdc285d0ad" />
-    <title>{% block title %}Telegaweatherbot{% endblock title %}</title>
+    <title>{% block title %}Telegram weather bot{% endblock title %}</title>
     <link rel="shortcut icon" type="image/png" href="{% static 'page/image/favicon.png' %}"/>
     <link rel="stylesheet" href="{% static 'page/css/page.css' %}">
     {% block stylesheet %}{% endblock stylesheet%}
@@ -15,7 +15,7 @@
     <ul>
       <li {% if request.resolver_match.url_name == 'index' %}class="active"{% endif %}><a href="/">Home</a></li>
       <li {% if request.resolver_match.url_name == 'feedback' %}class="active"{% endif %}><a href="/feedback">FeedBack</a></li>
-      <li {% if request.resolver_match.url_name == 'contact' %}class="active"{% endif %}><a href="/contact">Contact</a></li>
+      <li {% if request.resolver_match.url_name == 'about' %}class="active"{% endif %}><a href="/about">About</a></li>
       <!--<li><a href="#about">About</a></li>-->
       <!--<li style="float:right"><a class="active" href="#about">About</a></li>-->
     </ul>

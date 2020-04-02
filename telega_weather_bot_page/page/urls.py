@@ -7,5 +7,5 @@ app_name = 'page'
 urlpatterns = [
     path('', views.IndexView.as_view(), name='index'),
     path('feedback/', views.FeedbackView.as_view(), name='feedback'),
-    path('contact/', views.ContactView.as_view(), name='contact'),
+    path('about/', views.AboutView.as_view(), name='about'),
 ]

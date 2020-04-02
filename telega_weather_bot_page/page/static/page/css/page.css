@@ -50,6 +50,16 @@ h1 {
  margin: 0 auto;
 }
 
+about
+{
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 20px;
+ color: #274c73;
+ float: left;
+ position: relative;
+ left: 30%;
+}
+
 newComment {
   float: left;
   padding: 20px;
