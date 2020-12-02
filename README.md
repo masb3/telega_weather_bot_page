@@ -1,1 +1,1 @@
-# telega_weather_bot_page
+# Telegram weather bot webpage
